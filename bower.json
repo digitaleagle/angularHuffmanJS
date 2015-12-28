@@ -1,0 +1,19 @@
+{
+  "name": "angularHuffmanJS",
+  "authors": [
+    "Stephen Phillips"
+  ],
+  "description": "Offers Huffman JS encoding as an Angular Service",
+  "main": "src/angularHuffmanJS.js",
+  "moduleType": [],
+  "keywords": [
+    "Angular",
+    "Huffman",
+    "Javascript"
+  ],
+  "license": "MIT",
+  "homepage": "digitaleagle.net",
+  "dependencies": {
+    "angular": "angularjs#~1.4.8"
+  }
+}

@@ -1,0 +1,52 @@
+<html ng-app="demo">
+	<head>
+		<title>Angular Huffman JS</title>
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="../src/angularHuffmanJS.js"></script>
+		<script src="../src/lib/huffman-0.9.0.min.js"></script>
+		<script src="../src/lib/rosettaCode.js"></script>
+		<script src="../src/lib/BinaryHeap.js"></script>
+		<script src="app.js"></script>
+		<style>
+			.sec {
+				display: inline-block;
+				vertical-align: top;
+				height: 100%;
+				align: center;
+			}
+			.divider {
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+				padding-top: 100px;
+			}
+			.divider > button {
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body ng-controller="demoCtrl">
+		<h1>Angular Huffman JS</h1>
+		<div>
+			<h2>Config</h2>
+			<p><label>Text for Tree</label>
+			<input type="text" ng-model="treeText"></p>
+			<p><button ng-click="resetTreeText()">Reset Tree</p>
+		</div>
+		<div class="sec">
+			<h2>Encode</h2>
+			<p><input type="text" ng-model="textToEncode"></p>
+			<p><button ng-click="encode()">encode</button></p>
+			<p><input type="text" ng-model="encodeOutput"></p>
+		</div>
+		<div class="divider">
+			<button ng-click="encodetoDecode()">--&gt;</button>
+		</div>
+		<div class="sec">
+			<h2>Decode</h2>
+			<p><input type="text" ng-model="textToDecode"></p>
+			<p><button ng-click="decode()">decode</button></p>
+			<p><input type="text" ng-model="decodeOutput"></p>
+		</div>
+	</body>
+</html>
